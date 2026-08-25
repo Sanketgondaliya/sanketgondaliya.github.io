@@ -3,467 +3,721 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanket gondaliya</title> <!-- - favicon -->
-    <link rel="shortcut icon" href="./assets/images/avatar-1.ico" type="image/x-icon"> <!-- - custom css link -->
-    <link rel="stylesheet" href="./assets/css/style.css"> <!-- - google font link -->
+    <title>Sanket Gondaliya | Full-Stack Software Engineer</title>
+    <meta name="description" content="Full-Stack Software Engineer with expertise in building scalable enterprise applications, robust data pipelines, and intelligent AI-driven platforms.">
+    <link rel="shortcut icon" href="./assets/images/avatar-1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body> <!-- - #MAIN -->
-    <main> <!-- - #SIDEBAR -->
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box"> <img src="./assets/images/sq-photo.JPG" alt="Sanket gondaliya" width="80">
-                </figure>
-                <div class="info-content">
-                    <h1 class="name" title="Sanket gondaliya">Sanket gondaliya</h1>
-                    <p class="title">Software Engineer</p>
-                </div> <button class="info_more-btn" data-sidebar-btn> <span>Show Contacts</span> <ion-icon
-                        name="chevron-down"></ion-icon> </button>
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Gradient Mesh Blobs -->
+    <div class="gradient-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo magnetic-wrap">
+                <span class="magnetic-area">
+                    <span class="logo-bracket">&lt;</span>Sanket Gondaliya<span class="logo-bracket">/&gt;</span>
+                </span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
             </div>
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box"> <ion-icon name="mail-outline"></ion-icon> </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p> <a href="mailto:sanketgondaliya6@gmail.com"
-                                class="contact-link">sanketgondaliya6@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box"> <ion-icon name="phone-portrait-outline"></ion-icon> </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p> <a href="tel:+918320546767" class="contact-link">+91
-                                8320546767</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box"> <ion-icon name="calendar-outline"></ion-icon> </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p> <time datetime="2002-08-22">August 22, 2002</time>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box"> <ion-icon name="location-outline"></ion-icon> </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-                            <address>Ahmedabad, Gujarat, India</address>
-                        </div>
-                    </li>
-                </ul>
-                <div class="separator"></div>
-                <ul class="social-list">
-                    <!-- <li class="social-item"> <a href="#" class="social-link"> <ion-icon name="logo-facebook"></ion-icon> </a> </li> -->
-                    <li class="social-item"> <a href="https://www.linkedin.com/in/sanket-gondaliya-94b354225/" ,
-                            target="_blank" class="social-link"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
-                    <!-- <li class="social-item"> <a href="https://www.instagram.com/sanket_gondaliya/" , target="" class="social-link"> <ion-icon name="logo-instagram"></ion-icon> </a> </li> -->
-                </ul>
-            </div>
-        </aside> <!-- - #main-content -->
-        <div class="main-content"> <!-- - #NAVBAR -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item"> <button class="navbar-link active" data-nav-link>About</button> </li>
-                    <li class="navbar-item"> <button class="navbar-link" data-nav-link>Resume</button> </li>
-                    <li class="navbar-item"> <button class="navbar-link" data-nav-link>Portfolio</button> </li>
-                </ul>
-            </nav> <!-- - #ABOUT -->
-            <article class="about active" data-page="about">
-                <header>
-                    <h2 class="h2 article-title">About me</h2>
-                </header>
-                <section class="about-text">
-                    <p style="text-align: justify;"> I am a <strong>Software Engineer</strong> based in Ahmedabad, Gujarat, India, with a track record of building high-performance spatial engines and scalable backend platforms. Currently at <strong>Satleo Labs</strong> (a pioneering space technology company), I specialize in translating complex geospatial data and advanced computer vision frameworks into production-ready software solutions. </p>
-                    <p style="text-align: justify;"> My technical expertise bridges the gap between backend engineering, AI/Agentic systems, and Web GIS. I design and develop robust microservices using <strong>Python (FastAPI, Flask)</strong> and <strong>Node.js</strong> coupled with spatial databases like <strong>PostgreSQL/PostGIS</strong>. With extensive hands-on experience deploying GIS services through <strong>GeoServer</strong>, integrating <strong>LLM frameworks (LangChain)</strong>, and implementing cutting-edge computer vision models (such as Meta's <strong>Segment Anything Model</strong>), I strive to create high-impact, data-driven applications that solve complex real-world challenges. </p>
-                </section> <!-- - service -->
-                <section class="service">
-                    <h3 class="h3 service-title">What i'm doing</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/icon-design.svg"
-                                    alt="Data analysis" width="40"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Data analysis</h4>
-                                <p class="service-item-text"> Turning complex data into simple, beautiful and insightful
-                                    visualizations </p>
-                            </div>
-                        </li>
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/icon-gis.svg" alt="GIS analyst"
-                                    width="40"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">GIS analysis</h4>
-                                <p class="service-item-text"> I Manipulate, Analyse and Visualise Spatial data. </p>
-                            </div>
-                        </li>
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/data-science.png"
-                                    alt="Data science" width="40"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Data science</h4>
-                                <p class="service-item-text"> Development of machine learning and deep learning models.
-                                </p>
-                            </div>
-                        </li>
-                        <div class="modal-container" data-modal-container>
-                            <div class="overlay" data-overlay></div>
-                            <section class="testimonials-modal"> <button class="modal-close-btn" data-modal-close-btn>
-                                    <ion-icon name="close-outline"></ion-icon> </button>
-                                <div class="modal-img-wrapper">
-                                    <figure class="modal-avatar-box"> <img src="./assets/images/avatar-1.png"
-                                            alt="Daniel lewis" width="80" data-modal-img> </figure> <img
-                                        src="./assets/images/icon-quote.svg" alt="quote icon">
-                                </div>
-                                <div class="modal-content">
-                                    <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4> <time
-                                        datetime="2021-06-14">14 June, 2021</time>
-                                    <div data-modal-text>
-                                        <p> Richard was hired to create a corporate identity. We were very pleased with
-                                            the work done. She has a lot of experience and is very concerned about the
-                                            needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur
-                                            adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore
-                                            magnarels alia. </p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-            </article> <!-- - #RESUME -->
-            <article class="resume" data-page="resume">
-                <header>
-                    <h2 class="h2 article-title">Resume</h2>
-                </header>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"> <ion-icon name="briefcase-outline"></ion-icon> </div>
-                        <h3 class="h3">Experience</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Software Engineer — Satleo Labs (Space Tech)</h4>
-                            <span>Feb 2026 — Present</span>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">• <strong>Thermal
-                                    & Ambient Temperature Monitoring:</strong> Developed an interactive spatial web
-                                platform for analyzing Urban Heat Island (UHI) effects, ambient temperature, and urban
-                                green cover.</p>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">• <strong>Ambient
-                                    Temperature Estimation:</strong> Engineered temperature estimation algorithms
-                                showing the estimated maximum temperature in the respective area during the peak day
-                                hours (from 12 PM to 5 PM).</p>
-                            <p class="timeline-text" style="text-align: justify;">• <strong>Geospatial
-                                    Services:</strong> Developed real-time WMS/WFS visualization layers and date
-                                filtering tools to track thermal hotspots and green canopy index dynamically over time.
-                            </p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Software Engineer — NASCENT Info-technologies</h4>
-                            <span>May 2025 — Jan 2026</span>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">• <strong>Layer
-                                    Product:</strong> Developed independent raster and vector query engines for
-                                high-performance spatial data retrieval and analysis.</p>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">• <strong>Apache
-                                    Superset Integration:</strong> Built interactive, multi-layer analytical dashboards
-                                to visualize complex geospatial and tabular datasets, configuring secure role-based
-                                access control and dataset-level restrictions.</p>
-                            <p class="timeline-text" style="text-align: justify;">• <strong>GeoServer Cartography
-                                    (JUMC):</strong> Designed multi-scale basemaps with zoom-dependent styling,
-                                optimized layer groups for city/ward level rendering, implemented basemap caching, and
-                                built a citizen-facing Incident Mapping Tool for local reporting and automated municipal
-                                routing.</p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Software Engineer Intern — NASCENT Info-technologies</h4>
-                            <span>Jan 2025 — Apr 2025</span>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">•
-                                <strong>EcoWanderNest Backend:</strong> Built backend core services using FastAPI and
-                                PostgreSQL/PostGIS for an AI-powered sustainable tourism application.
-                            </p>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">• <strong>Spatial
-                                    Routing:</strong> Implemented spatial routing algorithms (Dijkstra, TSP) using
-                                pgRouting to optimize carbon-emission-aware multi-destination travel paths.</p>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">• <strong>Carbon
-                                    Tracking:</strong> Designed mode-of-transport carbon footprint calculators and
-                                visualized EcoScores via Chart.js.</p>
-                            <p class="timeline-text" style="text-align: justify; margin-bottom: 6px;">•
-                                <strong>AI-Powered Pipelines:</strong> Built review summarization workflows using
-                                HuggingFace BART models (scraping data via Selenium) and developed "SafarBot", a
-                                voice-enabled chatbot with LangChain and Ollama LLMs.
-                            </p>
-                            <p class="timeline-text" style="text-align: justify;">• <strong>WebGIS Deployment:</strong>
-                                Deployed geospatial services via GeoServer with color-coded emission-aware routing
-                                mapped on an OpenLayers frontend.</p>
-                        </li>
-                    </ol>
-                </section>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"> <ion-icon name="book-outline"></ion-icon> </div>
-                        <h3 class="h3">Education</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Dhirubhai Ambani Institute of Information and
-                                Communication Technology (DA-IICT)</h4> <span>2023 — 2025</span>
-                            <p class="timeline-text"> M.Sc. Agriculture Analytics - A well-designed program, which is in
-                                collaboration with Indian Institute of Remote Sensing (IIRS) and Anand Agricultural
-                                University (AAU) </p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Junagadh Agricultural University (JAU)</h4> <span>2019 —
-                                2023</span>
-                            <p class="timeline-text"> B.Tech in Agricultural Engineering- equipping me with
-                                comprehensive theoretical and practical knowledge in all aspects of agricultural
-                                technolog. </p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Shree Sardar Patel Vidhya Mandir (Rajkot)</h4> <span>2018
-                                — 2019</span>
-                            <p class="timeline-text"> 12th Science - Gujarat Secondary and Higher Secondary Education
-                                Board </p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Shree Sardar Patel Vidhya Mandir (Rajkot)</h4> <span>2016
-                                — 2017</span>
-                            <p class="timeline-text"> 10th - Gujarat Secondary Education Board </p>
-                        </li>
-                    </ol>
-                </section>
-                <section class="skill">
-                    <h3 class="h3 skills-title">My skills</h3>
-                    <ul class="skills-list content-card">
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Python & Spatial Scripting</h5> <data value="95">95%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 95%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Web GIS Technologies (PostGIS, OpenLayers, GeoServer)</h5> <data
-                                    value="90">90%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Backend Development (FastAPI, Flask, Node.js)</h5> <data
-                                    value="88">88%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 88%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Databases & SQL (PostgreSQL, MySQL)</h5> <data value="85">85%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">GIS Software & Tools (QGIS, ArcGIS, ERDAS, ENVI)</h5> <data
-                                    value="85">85%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">LLMs & Agentic AI (LangChain, PyTorch, Hugging Face)</h5> <data
-                                    value="80">80%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Frontend Development (Angular, Bootstrap, HTML, CSS)</h5> <data
-                                    value="78">78%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 78%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article> <!-- - #PORTFOLIO -->
-            <article class="portfolio" data-page="portfolio">
-                <header>
-                    <h2 class="h2 article-title">Portfolio</h2>
-                </header>
-                <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item"> <button class="active" data-filter-btn>All</button> </li>
-                        <li class="filter-item"> <button data-filter-btn>Data analysis</button> </li>
-                        <li class="select-item"> <button data-select-item>Data science</button> </li>
-                        <li class="filter-item"> <button data-filter-btn>GIS analysis</button> </li>
-                    </ul>
-                    <div class="filter-select-box"> <button class="filter-select" data-select>
-                            <div class="select-value" data-selecct-value>Select category</div>
-                            <div class="select-icon"> <ion-icon name="chevron-down"></ion-icon> </div>
-                        </button>
-                        <ul class="select-list">
-                            <li class="select-item"> <button data-select-item>All</button> </li>
-                            <li class="select-item"> <button data-select-item>Data analysis</button> </li>
-                            <li class="select-item"> <button data-select-item>Data science</button> </li>
-                            <li class="select-item"> <button data-select-item>GIS analysis</button> </li>
-                        </ul>
-                    </div>
-                    <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="Data analysis"> <a
-                                href="https://github.com/Sanketgondaliya/Fertilization-Recommendation-system-" ,
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets\images\Fertilization Recommendation System.png"
-                                        alt="Fertilization Recommendation System Using Machine Learning" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Fertilization Recommendation System Using Machine Learning
-                                </h3>
-                                <p class="project-category">Data analysis</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="Data analysis"> <a
-                                href="https://github.com/Sanketgondaliya/Annual-Analyzing-the-Correlation-Between-GDP-Changes-and-Greenhouse">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets\images\Relationship between GDP Growth and Greenhouse Gas Emissions in India.png"
-                                        alt="Relationship between GDP Growth and Greenhouse Gas Emissions in India"
-                                        loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Annual Analyzing the Correlation Between GDP Changes
-                                    andnGreenhouse</h3>
-                                <p class="project-category">Data analysis</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="Data analysis"> <a
-                                href="https://github.com/Sanketgondaliya/Crop-Production-Statistics-Informtion-System-APP">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets\images\Crop-Production-Statistics-Informtion-System.png"
-                                        alt="Crop Production Statistics Informtion System APP" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Crop Production Statistics Informtion System APP</h3>
-                                <p class="project-category">Data analysis</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="Data science"> <a
-                                href="https://github.com/Sanketgondaliya/crop_damage_recommendation-" , target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets\images\pest pridiction.png"
-                                        alt="crop damage recommendation using PostgreML" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">crop damage recommendation using PostgreML</h3>
-                                <p class="project-category">Data science</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="GIS analysis"> <a
-                                href="https://github.com/Sanketgondaliya/Sanketgondaliya-Developing-Web-based-Geographic-Information-Systems-Application"
-                                , target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets\images\census 2011.png"
-                                        alt="Developing Web based Geographic Information Systems Application"
-                                        loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Developing Web based Geographic Information Systems
-                                    Application (Gujarat Census 2011)</h3>
-                                <p class="project-category">GIS analysis</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="GIS analysis"> <a
-                                href="https://github.com/Sanketgondaliya/Field-Boundary-Delineation-Using-SAM"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets/images/sam_field_boundary.png"
-                                        alt="Field Boundary Delineation Using SAM" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Field Boundary Delineation Using Segment Anything Model (SAM)
-                                </h3>
-                                <p class="project-category">GIS analysis</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="GIS analysis"> <a
-                                href="https://github.com/Sanketgondaliya/vedas-wms-layer-explorer"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets/images/vedas_wms_explorer.png"
-                                        alt="VEDAS WMS Layer Explorer" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">VEDAS WMS Layer Explorer</h3>
-                                <p class="project-category">GIS analysis</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="Data science"> <a
-                                href="https://github.com/Sanketgondaliya/tree-detection-counting"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets/images/tree_detection.png"
-                                        alt="Tree Detection & Counting" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Tree Detection and Counting</h3>
-                                <p class="project-category">Data science</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="Data science"> <a
-                                href="https://github.com/Sanketgondaliya/vehical-detection-and-counts"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets/images/vehicle_detection.png"
-                                        alt="Vehicle Detection & Counting" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Vehicle Detection and Counting</h3>
-                                <p class="project-category">Data science</p>
-                            </a> </li>
-                        <li class="project-item active" data-filter-item data-category="GIS analysis"> <a
-                                href="https://github.com/Sanketgondaliya/Agriculture-Drought-Analysis-using-time-series-satellite-data"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"> <ion-icon name="eye-outline"></ion-icon> </div>
-                                    <img src="assets/images/drought.png" alt="Web GIS" loading="lazy">
-                                </figure>
-                                <h3 class="project-title"> Agriculture Drought Analysis using time series satellite data
-                                    Using python </h3>
-                                <p class="project-category">GIS analysis</p>
-                            </a> </li>
-                    </ul>
-                </section>
-            </article>
-            <article class="contact" data-page="contact">
-                <header>
-                    <h2 class="h2 article-title">Contact</h2>
-                </header>
-                <section class="mapbox" data-mapbox>
-                    <figure> <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59383.415865862116!2d70.46095495060942!3d21.52872482663816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3958018c6a277f53%3A0x13b52f8520a86e48!2sJunagadh%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1720614189820!5m2!1sen!2sin"
-                            width="400" height="300" loading="lazy"></iframe> </figure>
-                </section>
-                <section class="contact-form">
-                    <h3 class="h3 form-title">Contact Form</h3>
-                    <form action="#" class="form" data-form>
-                        <div class="input-wrapper"> <input type="text" name="fullname" class="form-input"
-                                placeholder="Full name" required data-form-input> <input type="email" name="email"
-                                class="form-input" placeholder="Email address" required data-form-input> </div>
-                        <textarea name="message" class="form-input" placeholder="Your Message" required
-                            data-form-input></textarea> <button class="form-btn" type="submit" disabled data-form-btn>
-                            <ion-icon name="paper-plane"></ion-icon> <span>Send Message</span> </button>
-                    </form>
-                </section>
-            </article>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    </main> <!-- - custom js link -->
-    <script src="./assets/js/script.js"></script> <!-- - ionicon link -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-spotlight" id="heroSpotlight"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll" data-animation="fade-up">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name" id="heroName">Sanket Gondaliya</span>
+                </h1>
+                <div class="hero-role animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <span class="role-prefix">&gt;&nbsp;</span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">_</span>
+                </div>
+                <p class="hero-description animate-on-scroll" data-animation="fade-up" data-delay="300">
+                    Full-Stack Software Engineer crafting scalable enterprise applications,
+                    robust data pipelines, and intelligent AI-driven platforms.
+                </p>
+                <div class="hero-cta animate-on-scroll" data-animation="fade-up" data-delay="400">
+                    <a href="#projects" class="btn btn-primary magnetic-wrap">
+                        <span class="magnetic-area">
+                            <span class="btn-text">View My Work</span>
+                            <span class="btn-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-wrap">
+                        <span class="magnetic-area">
+                            <span class="btn-text">Get In Touch</span>
+                        </span>
+                    </a>
+                    <a href="https://github.com/Sanketgondaliya" target="_blank" class="btn btn-ghost magnetic-wrap">
+                        <span class="magnetic-area">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll" data-animation="fade-up" data-delay="500">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll" data-animation="fade-left">
+                <div class="hero-image-container">
+                    <div class="hero-image-ring ring-1"></div>
+                    <div class="hero-image-ring ring-2"></div>
+                    <div class="hero-image-ring ring-3"></div>
+                    <div class="hero-image-wrapper">
+                        <img src="./assets/images/sq-photo.JPG" alt="Sanket Gondaliya" />
+                    </div>
+                    <!-- Orbiting tech badges -->
+                    <div class="orbit-container">
+                        <div class="orbit-badge badge-1" data-parallax="0.05">
+                            <span class="orbit-dot"></span>Spring Boot
+                        </div>
+                        <div class="orbit-badge badge-2" data-parallax="0.08">
+                            <span class="orbit-dot"></span>FastAPI
+                        </div>
+                        <div class="orbit-badge badge-3" data-parallax="0.06">
+                            <span class="orbit-dot"></span>PostGIS
+                        </div>
+                        <div class="orbit-badge badge-4" data-parallax="0.07">
+                            <span class="orbit-dot"></span>Angular
+                        </div>
+                        <div class="orbit-badge badge-5" data-parallax="0.04">
+                            <span class="orbit-dot"></span>LangChain
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- ===== TECH MARQUEE ===== -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item">Python</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Java</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">TypeScript</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Spring Boot</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">FastAPI</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Angular</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">React</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">PostgreSQL</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">GeoServer</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Docker</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">AWS</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">LangChain</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">PyTorch</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">OpenLayers</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Leaflet</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Node.js</span><span class="marquee-dot">◆</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span class="marquee-item">Python</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Java</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">TypeScript</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Spring Boot</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">FastAPI</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Angular</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">React</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">PostgreSQL</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">GeoServer</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Docker</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">AWS</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">LangChain</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">PyTorch</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">OpenLayers</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Leaflet</span><span class="marquee-dot">◆</span>
+                <span class="marquee-item">Node.js</span><span class="marquee-dot">◆</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="animate-on-scroll" data-animation="fade-right">I am a <strong>Full-Stack Software Engineer</strong> based in Ahmedabad, Gujarat with expertise in building scalable enterprise applications, robust data pipelines, and intelligent AI-driven platforms.</p>
+                    <p class="animate-on-scroll" data-animation="fade-right" data-delay="100">Proficient in modern architectures including <strong>Spring Boot, FastAPI, Angular, and React</strong> with a proven track record of designing high-performance query engines, secure multi-tenant backends, and complex data visualization tools.</p>
+                    <p class="animate-on-scroll" data-animation="fade-right" data-delay="200">My work bridges the gap between backend engineering, AI/Agentic systems, and Web GIS — turning complex geospatial data into production-ready solutions that solve real-world challenges.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card glow-card animate-on-scroll" data-animation="fade-up">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="about-card-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3>Backend Engineering</h3>
+                            <p>Scalable microservices with Spring Boot, FastAPI, Node.js</p>
+                        </div>
+                    </div>
+                    <div class="about-card glow-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="about-card-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </div>
+                            <h3>Web GIS</h3>
+                            <p>Interactive geospatial platforms with GeoServer & Leaflet</p>
+                        </div>
+                    </div>
+                    <div class="about-card glow-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="about-card-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <h3>AI & ML</h3>
+                            <p>LLMs, LangChain, PyTorch, and computer vision</p>
+                        </div>
+                    </div>
+                    <div class="about-card glow-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="about-card-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <h3>Frontend</h3>
+                            <p>Modern UIs with Angular, React & data visualization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glow-card animate-on-scroll" data-animation="fade-up">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="skill-category-header">
+                            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">TypeScript</span><span class="skill-tag">JavaScript</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glow-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="skill-category-header">
+                            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">FastAPI</span><span class="skill-tag">Spring Boot</span><span class="skill-tag">Node.js</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span><span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glow-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="skill-category-header">
+                            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Angular</span><span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glow-card animate-on-scroll" data-animation="fade-up" data-delay="50">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="skill-category-header">
+                            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span><span class="skill-tag">GCP</span><span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glow-card animate-on-scroll" data-animation="fade-up" data-delay="150">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="skill-category-header">
+                            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                            <h3>Web GIS</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OpenLayers</span><span class="skill-tag">Leaflet</span><span class="skill-tag">TiTiler</span><span class="skill-tag">PostGIS</span><span class="skill-tag">GeoServer</span><span class="skill-tag">WMS/WFS</span><span class="skill-tag">QGIS</span><span class="skill-tag">ArcGIS Pro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glow-card animate-on-scroll" data-animation="fade-up" data-delay="250">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="skill-category-header">
+                            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+                            <h3>ML & AI</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Scikit-learn</span><span class="skill-tag">PyTorch</span><span class="skill-tag">Hugging Face</span><span class="skill-tag">LangChain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line" id="timelineLine"></div>
+
+                <div class="timeline-item animate-on-scroll" data-animation="fade-right">
+                    <div class="timeline-dot"><div class="timeline-dot-ping"></div><div class="timeline-dot-inner"></div></div>
+                    <div class="timeline-content glow-card">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Feb 2026 — Present</span>
+                                <span class="timeline-badge current">Current</span>
+                            </div>
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <h4 class="timeline-company">SatLeo Labs — Ahmedabad, Gujarat</h4>
+                            <ul class="timeline-details">
+                                <li><strong>Insight Portal:</strong> Engineered a scalable, multi-tenant satellite data platform using Angular, Spring Boot (Java 21), and PostgreSQL.</li>
+                                <li>Developed core backend micro-modules for spatial data catalogs, e-commerce, and subscription management, integrating Stripe API.</li>
+                                <li>Implemented secure authentication (Google OAuth, JWT), Flyway migrations, Cloudflare R2 and TiTiler for satellite imagery.</li>
+                                <li><strong>Smart City UHI Platform:</strong> Built an Urban Heat Island analytics app with React (Vite) and FastAPI.</li>
+                                <li>Designed interactive geospatial interfaces with Leaflet and Role-Based Access Control (RBAC).</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Angular</span><span>Spring Boot</span><span>FastAPI</span><span>GeoServer</span><span>Leaflet</span><span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-animation="fade-left">
+                    <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+                    <div class="timeline-content glow-card">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">May 2025 — Jan 2026</span>
+                            </div>
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <h4 class="timeline-company">NASCENT Info-technologies — Ahmedabad</h4>
+                            <ul class="timeline-details">
+                                <li><strong>Layer Product:</strong> Developed raster and vector query engines for high-performance spatial data retrieval.</li>
+                                <li><strong>Apache Superset Integration:</strong> Built multi-layer analytical dashboards for geospatial and tabular datasets.</li>
+                                <li><strong>JUMC Cartography:</strong> Designed multi-scale basemaps with zoom-dependent styling.</li>
+                                <li><strong>Incident Mapping Tool:</strong> Built citizen-facing reporting module with automated municipal routing.</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>GeoServer</span><span>Apache Superset</span><span>PostGIS</span><span>RBAC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-animation="fade-right">
+                    <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+                    <div class="timeline-content glow-card">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Jan 2025 — Apr 2025</span>
+                            </div>
+                            <h3 class="timeline-title">Software Engineer Intern</h3>
+                            <h4 class="timeline-company">NASCENT Info-technologies — Ahmedabad</h4>
+                            <ul class="timeline-details">
+                                <li><strong>EcoWanderNest:</strong> Built AI-powered GIS backend for sustainable tourism with FastAPI and PostGIS.</li>
+                                <li>Implemented spatial routing (Dijkstra, TSP) with pgRouting for carbon-emission-aware travel paths.</li>
+                                <li>Built AI summarization pipeline with HuggingFace BART and "SafarBot" chatbot with LangChain & Ollama.</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>FastAPI</span><span>PostGIS</span><span>LangChain</span><span>HuggingFace</span><span>OpenLayers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section-header animate-on-scroll" data-animation="fade-up" style="margin-top: 80px;">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-grid">
+                <div class="edu-card glow-card animate-on-scroll" data-animation="fade-up">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="edu-top">
+                            <div class="edu-icon">🎓</div>
+                            <span class="edu-grade">CPI: 8.50</span>
+                        </div>
+                        <h3>Master of Science — M.Sc.</h3>
+                        <h4>DA-IICT, Gandhinagar</h4>
+                        <span class="edu-date">2023 — 2025</span>
+                    </div>
+                </div>
+                <div class="edu-card glow-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="edu-top">
+                            <div class="edu-icon">🎓</div>
+                            <span class="edu-grade">CPI: 7.23</span>
+                        </div>
+                        <h3>B.Tech — Agricultural Engineering</h3>
+                        <h4>Junagadh Agricultural University</h4>
+                        <span class="edu-date">2019 — 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-filters animate-on-scroll" data-animation="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="gis">GIS</button>
+                <button class="filter-btn" data-filter="ml">ML / AI</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glow-card animate-on-scroll" data-category="gis" data-animation="fade-up">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/sam_field_boundary.png" alt="Field Boundary Delineation" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/Field-Boundary-Delineation-Using-SAM" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">GIS / Computer Vision</span>
+                            <h3>Field Boundary Delineation Using SAM</h3>
+                            <p>Meta's Segment Anything Model for precise agricultural field boundary detection from satellite imagery.</p>
+                            <div class="project-tech-stack"><span>SAM</span><span>Python</span><span>Satellite</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="gis" data-animation="fade-up" data-delay="100">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/census 2011.png" alt="WebGIS Application" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/Sanketgondaliya-Developing-Web-based-Geographic-Information-Systems-Application" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">GIS / Data Viz</span>
+                            <h3>WebGIS Census Visualization</h3>
+                            <p>Interactive web-based GIS platform for Gujarat Census 2011 demographic data visualization.</p>
+                            <div class="project-tech-stack"><span>OpenLayers</span><span>GeoServer</span><span>JS</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="ml" data-animation="fade-up" data-delay="200">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/pest pridiction.png" alt="Crop Damage Recommendation" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/crop_damage_recommendation-" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Machine Learning</span>
+                            <h3>Crop Damage Recommendation</h3>
+                            <p>XGBoost-based pest damage assessment with Streamlit interface for real-time prediction.</p>
+                            <div class="project-tech-stack"><span>PostgreML</span><span>XGBoost</span><span>Streamlit</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="gis" data-animation="fade-up">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/vedas_wms_explorer.png" alt="VEDAS WMS Explorer" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/vedas-wms-layer-explorer" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">GIS / Remote Sensing</span>
+                            <h3>VEDAS WMS Layer Explorer</h3>
+                            <p>Interactive web tool for exploring WMS layers from the VEDAS platform.</p>
+                            <div class="project-tech-stack"><span>WMS</span><span>OpenLayers</span><span>JS</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="ml" data-animation="fade-up" data-delay="100">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/tree_detection.png" alt="Tree Detection" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/tree-detection-counting" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Computer Vision</span>
+                            <h3>Tree Detection & Counting</h3>
+                            <p>Object detection model for automated tree counting from aerial/satellite imagery.</p>
+                            <div class="project-tech-stack"><span>YOLO</span><span>Python</span><span>OpenCV</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="ml" data-animation="fade-up" data-delay="200">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/vehicle_detection.png" alt="Vehicle Detection" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/vehical-detection-and-counts" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Computer Vision</span>
+                            <h3>Vehicle Detection & Counting</h3>
+                            <p>Real-time vehicle detection and counting system using deep learning.</p>
+                            <div class="project-tech-stack"><span>YOLO</span><span>Python</span><span>OpenCV</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="gis" data-animation="fade-up">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/drought.png" alt="Drought Analysis" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/Agriculture-Drought-Analysis-using-time-series-satellite-data" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">GIS / Remote Sensing</span>
+                            <h3>Agriculture Drought Analysis</h3>
+                            <p>Time series satellite data analysis for agricultural drought monitoring.</p>
+                            <div class="project-tech-stack"><span>Python</span><span>Satellite</span><span>Time Series</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glow-card animate-on-scroll" data-category="backend" data-animation="fade-up" data-delay="100">
+                    <div class="glow-card-border"></div>
+                    <div class="glow-card-content">
+                        <div class="project-image">
+                            <img src="assets/images/Fertilization Recommendation System.png" alt="Fertilization Recommendation" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Sanketgondaliya/Fertilization-Recommendation-system-" target="_blank" class="project-link magnetic-wrap"><span class="magnetic-area">View Project →</span></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Data Analysis / ML</span>
+                            <h3>Fertilization Recommendation System</h3>
+                            <p>ML-based system for optimizing fertilizer usage in agriculture.</p>
+                            <div class="project-tech-stack"><span>Python</span><span>ML</span><span>Analysis</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-wrap animate-on-scroll" data-animation="fade-right">
+                    <h3 class="contact-headline">Have a project in mind?<br><span>Let's build something great.</span></h3>
+                    <p class="contact-intro">I'm always open to discussing new opportunities, creative ideas, or partnerships. Drop me a line!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:sanketgondaliya6@gmail.com" class="contact-card glow-card">
+                            <div class="glow-card-border"></div>
+                            <div class="glow-card-content contact-card-inner">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <div><h4>Email</h4><span>sanketgondaliya6@gmail.com</span></div>
+                            </div>
+                        </a>
+                        <a href="tel:+918320546767" class="contact-card glow-card">
+                            <div class="glow-card-border"></div>
+                            <div class="glow-card-content contact-card-inner">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <div><h4>Phone</h4><span>+91 8320546767</span></div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sanket-gondaliya-94b354225/" target="_blank" class="contact-card glow-card">
+                            <div class="glow-card-border"></div>
+                            <div class="glow-card-content contact-card-inner">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                <div><h4>LinkedIn</h4><span>Sanket Gondaliya</span></div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Sanketgondaliya" target="_blank" class="contact-card glow-card">
+                            <div class="glow-card-border"></div>
+                            <div class="glow-card-content contact-card-inner">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                <div><h4>GitHub</h4><span>Sanketgondaliya</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap animate-on-scroll" data-animation="fade-left">
+                    <form class="contact-form glow-card" id="contactForm">
+                        <div class="glow-card-border"></div>
+                        <div class="glow-card-content">
+                            <div class="form-group">
+                                <input type="text" id="formName" name="name" required placeholder=" ">
+                                <label for="formName">Your Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="formEmail" name="email" required placeholder=" ">
+                                <label for="formEmail">Email Address</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="formMessage" name="message" rows="4" required placeholder=" "></textarea>
+                                <label for="formMessage">Your Message</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full magnetic-wrap">
+                                <span class="magnetic-area">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo"><span class="logo-bracket">&lt;</span>Sanket Gondaliya<span class="logo-bracket">/&gt;</span></span>
+                <p>Designed & Built by Sanket Gondaliya © 2026</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Sanketgondaliya" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sanket-gondaliya-94b354225/" target="_blank">LinkedIn</a>
+                    <a href="mailto:sanketgondaliya6@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
